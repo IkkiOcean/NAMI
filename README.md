@@ -187,28 +187,29 @@ NAMI can be deployed in environments requiring indoor transport automation:
 
 1. **Encoder Odometry** (MUST START FIRST)
 ```bash
-rosrun nami encoder_odom.py
+python3 encoder_odom.py
 # Wait for "Encoder odom ready"
 ```
 
 2. **LiDAR Driver**
 ```bash
-roslaunch ydlidar_ros_driver X2.launch
+ros2 launch ydlidar_ros2_driver ydlidar_launch.py
 ```
 
 3. **SLAM System**
 ```bash
-roslaunch slam_toolbox online_async.launch
+ros2 launch slam_toolbox online_async_launch.py \
+    params_file:=$HOME/mapper_params_online_async.yaml
 ```
 
 4. **Motor Control**
 ```bash
-rosrun nami motor_bridge.py
+python3 motor_bridge.py
 ```
 
-5. **Navigation Stack**
+5. **Explore Stack**
 ```bash
-roslaunch nami move_base.launch
+python3 explore.py
 ```
 
 ---
