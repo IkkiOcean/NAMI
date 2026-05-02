@@ -72,7 +72,6 @@ The system demonstrates that robust autonomous navigation can be achieved using 
 | **Wheel Encoders** | Optical coupling | 100 pulses/revolution, 5mm resolution |
 | **Motors** | DC Brushed Gearmotor | 125 RPM @ 12V, dual-shaft configuration (4 motors) |
 | **Motor Driver** | L298N H-Bridge | Dual channel, 2A per channel |
-| **Ultrasonic Sensors** | HC-SR04 | Additional obstacle detection |
 | **Battery** | 3S LiPo | 11.1V, 5200mAh, 57.72Wh capacity |
 | **Chassis** | Differential Drive | 35cm × 30cm × 20cm, 5cm ground clearance |
 
